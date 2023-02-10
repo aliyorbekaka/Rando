@@ -99,7 +99,6 @@ function getGradient() {
     const randomColor = Math.trunc(Math.random() * valeus.length);
     color += valeus[randomColor];
   }
-
   return color;
 }
 
@@ -108,8 +107,8 @@ function setGradient() {
     const color1 = getGradient();
     const color2 = getGradient();
     const color3 = getGradient();
-  const randomDeg = Math.trunc(Math.random() * 360);
-  const bgColor = `linear-gradient(
+    const randomDeg = Math.trunc(Math.random() * 360);
+    const bgColor = `linear-gradient(
     ${randomDeg}deg,
     ${color1},
     ${color2},
